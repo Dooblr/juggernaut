@@ -1,0 +1,52 @@
+.services-container {
+  padding: 2rem;
+  text-align: center;
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: "Inter", system-ui, helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

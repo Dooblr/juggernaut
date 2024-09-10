@@ -1,0 +1,43 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .top-bar {
+    background-color: rgba(50, 50, 50, 0.9);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.5rem;
+          padding: 0.5rem 1rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: tomato;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+}
